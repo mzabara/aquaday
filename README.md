@@ -1,4 +1,4 @@
-aquaday
+Интернет магазин Aquaday
 =======
 
-Aquaday
+Frontend&Design Zabara M.D., copyright 2014
