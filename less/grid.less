@@ -55,14 +55,98 @@
 
 .make-grid(xs);
 
+@media (max-width: @screen-xs) {
+  .make-grid(xs);
+  header{
+    &.navbar-default{
+      position: relative!important;
+    }
 
-// Small grid
+    .search-form-holder{
+      padding: 7px 0;
+    }
+
+    .collapse-panel-holder{
+      position: relative!important;
+      top: 0!important;
+      left: 0!important;
+      .catalog-section-menu-level-2{
+        li{
+          width: 100%!important;
+          float: none!important;
+        }
+      }
+    }
+  }
+  .hit-tabs{
+    position: relative!important;
+    top: 0!important;
+    .nav-pills{
+      margin-top: 15px;
+    }
+
+    .col-xs-12{
+      margin-bottom: 15px;
+    }
+
+  }
+}
+
+// Small grid (Планщеты)
 //
 // Columns, offsets, pushes, and pulls for the small device range, from phones
 // to tablets.
 
 @media (min-width: @screen-sm-min) {
   .make-grid(sm);
+  .index-promo-holder{
+    margin-top: 135px;
+  }
+}
+
+@media (max-width: @screen-sm-min) {
+  header{
+    &.navbar-default{
+      position: relative!important;
+      .brand-search-holder{
+        .search-form-holder{
+          padding: 7px 0;
+        }
+        .text-right{
+          text-align: center!important;
+        }
+      }
+      .main-menu-holder{
+        .navbar-nav{
+          li{
+            a{
+              padding: 10px!important;
+              background: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .collapse-panel-holder{
+    position: relative!important;
+    top: 0!important;
+    left: 0!important;
+  }
+
+  .footer-helps-holder{
+    .text-left,
+    .text-right{
+      text-align: center!important;
+    }
+    .col-md-6{
+      padding: 3px 0;
+    }
+  }
+  .hit-tabs{
+    position: relative!important;
+    top: 0!important;
+  }
 }
 
 
@@ -81,4 +165,7 @@
 
 @media (min-width: @screen-lg-min) {
   .make-grid(lg);
+  .index-promo-holder{
+    margin-top: 135px;
+  }
 }
