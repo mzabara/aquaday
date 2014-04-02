@@ -28,6 +28,47 @@
   }
 }
 
+.fast-buy-product-holder{
+
+  h2{
+    margin: 7px 0;
+    font-family: @font-family-sans-serif-medium;
+  }
+
+  .availability{
+    margin-bottom: 10px;
+    .label{
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }
+
+  .list-unstyled{
+    margin-bottom: 0;
+    li{
+      font-size: 13px;
+    }
+  }
+
+  .cost{
+    font-family: @font-family-sans-serif-medium;
+    font-size: 25px;
+    .fa-rub{
+      font-size: 22px;
+    }
+  }
+
+  form{
+    margin-top: 15px;
+    .control-label{
+      font-weight: normal;
+    }
+    .btn-success{
+      margin-top: 24px;
+    }
+  }
+}
+
 .catalog-page-header{
   background-color: #f3f2f2;
 
@@ -140,9 +181,9 @@ aside{
         h3{
           margin: 0;
           padding: 2px 0;
+          font-family: @font-family-sans-serif-medium;
           a{
             color: #111111;
-            font-weight: bold;
             &:hover{
               text-decoration: none;
             }
@@ -332,6 +373,33 @@ aside{
 
         .product-item-picture{
           text-align: center;
+          a{
+            display: inline-block;
+            position: relative;
+          }
+          img{
+            border: solid 1px #d3d2d2;
+          }
+          .label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 74px;
+            height: 74px;
+            background: url("../images/promo-sprite.png") 0 0 no-repeat transparent;
+            font-size: 0;
+            margin: 0;
+            padding: 0;
+            &.label-warning{
+              background-position: 0 0;
+            }
+            &.label-danger{
+              background-position:0 -74px;
+            }
+            &.label-success{
+              background-position:0 -148px;
+            }
+          }
         }
 
       }
