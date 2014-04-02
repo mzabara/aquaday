@@ -1,0 +1,83 @@
+#toggleFilterClose{
+  position: absolute;
+  top: 10px;
+  left: auto;
+  right: 10px;
+}
+
+
+.slide-filter-form{
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-size: 13px;
+
+  .slide-filter-panel-title{
+    margin: 0;
+    a{
+      display: inline-block;
+      padding: 10px 0;
+      color: #111111;
+      text-decoration: none;
+    }
+  }
+
+  .slide-filter-panel-collapse-panel-body{
+    border-bottom: solid 1px #e2e2e2;
+    padding-bottom: 10px;
+
+    .checkbox{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .ui-slider{
+    position: relative;
+    .ui-widget-header {
+      top: 0 !important;
+      margin-left: 10px;
+    }
+  }
+  .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    height: 21px;
+    outline: none !important;
+    background: red;
+  }
+
+  .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    display: block;
+  }
+
+  .ui-slider-horizontal {
+    height: 7px;
+  }
+
+  .ui-slider-horizontal .ui-slider-handle {
+    top: -5px;
+  }
+
+  .ui-slider-horizontal .ui-slider-range {
+    top: -5px;
+    height: 100%;
+  }
+
+  .ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+  }
+
+  .ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+  }
+
+  .slide-filter-panel-result-control{
+    padding: 10px 0;
+    border-bottom: solid 1px #e2e2e2;
+    line-height: 30px;
+  }
+
+}

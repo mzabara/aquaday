@@ -5,7 +5,7 @@
   display: inline-block;
   padding-left: 0;
   margin: @line-height-computed 0;
-  border-radius: @border-radius-base;
+  border-radius: @border-radius-none;
 
   > li {
     display: inline; // Remove list-style and block-level defaults
@@ -18,20 +18,19 @@
       text-decoration: none;
       color: @pagination-color;
       background-color: @pagination-bg;
-      border: 1px solid @pagination-border;
       margin-left: -1px;
     }
     &:first-child {
       > a,
       > span {
         margin-left: 0;
-        .border-left-radius(@border-radius-base);
+        .border-left-radius(@border-radius-none);
       }
     }
     &:last-child {
       > a,
       > span {
-        .border-right-radius(@border-radius-base);
+        .border-right-radius(@border-radius-none);
       }
     }
   }
@@ -79,10 +78,10 @@
 
 // Large
 .pagination-lg {
-  .pagination-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @border-radius-large);
+  .pagination-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @border-radius-none);
 }
 
 // Small
 .pagination-sm {
-  .pagination-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @border-radius-small);
+  .pagination-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @border-radius-none);
 }

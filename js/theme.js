@@ -11,6 +11,14 @@ $('body').on('click', function (e) {
 });
 
 
+$("#toggleFilter").on("click", function() {
+    $(".row-offcanvas").toggleClass("active");
+});
+
+$("#toggleFilterClose").on("click", function() {
+    $(".row-offcanvas").removeClass("active");
+});
+
 $('#catalogNav').on('show.bs.collapse', function () {
     $('.collapse-panel-holder.in').collapse('hide');
 });
@@ -31,3 +39,29 @@ $('#mainPromoCarousel').carousel({
     interval: 7000
 })
 
+$("#sliderRangePrice").ionRangeSlider({
+    min: 0,
+    max: 50000,
+    type: 'double',
+    postfix: " р.",
+    prettify: false,
+    hasGrid: true
+});
+
+$("#sliderRangeLength").ionRangeSlider({
+    min: 0,
+    max: 1000,
+    type: 'double',
+    postfix: " мм.",
+    prettify: false,
+    hasGrid: true
+});
+
+$("#sliderRangeWidth").ionRangeSlider({
+    min: 0,
+    max: 1000,
+    type: 'double',
+    postfix: " мм.",
+    prettify: false,
+    hasGrid: true
+});

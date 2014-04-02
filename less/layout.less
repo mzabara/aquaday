@@ -118,6 +118,7 @@ header{
             border-bottom: solid 1px #0095d9;
             padding: 15px 15px 0 15px;
             margin: 0 10px;
+            .box-shadow(0 7px 12px rgba(0,0,0,.085));
             .catalog-section-title{
               font-size: 25px;
               margin-bottom: 10px;
@@ -227,6 +228,9 @@ header{
               left: auto;
               width: 35%;
               #shoppingCartHolder{
+                max-height: 350px;
+                overflow-y: auto;
+                overflow-x: hidden;
                 background-color: #ffffff;
                 .box-shadow(0 6px 12px rgba(0,0,0,.085));
                 .table{

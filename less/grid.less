@@ -57,6 +57,44 @@
 
 @media (max-width: @screen-xs) {
   .make-grid(xs);
+
+  .sku-holder{
+    margin-bottom: 15px;
+  }
+
+  .product-item-picture{
+    margin-bottom: 15px;
+    img{
+      display: inline;
+      max-width: 100%!important;
+    }
+  }
+
+  /* outer div */
+  .row-offcanvas {
+    position: relative;
+    left: 0;
+    -webkit-transition: left .3s ease-in;
+    -most-transition: left .3s ease-in;
+    transition: left .3s ease-in;
+  }
+
+  /* sidebar */
+  .sidebar-offcanvas {
+    left: -90%;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #F7F7F7;
+    padding: 10px;
+  }
+
+  /* content */
+  .row-offcanvas.active {
+    left: 90%;
+  }
+
   header{
     &.navbar-default{
       position: relative!important;
@@ -99,12 +137,62 @@
 
 @media (min-width: @screen-sm-min) {
   .make-grid(sm);
+  .smart-breadcrumbs,
   .index-promo-holder{
     margin-top: 135px;
   }
+
+  .catalog-page-header{
+    text-align: center;
+    .sorting-product-holder{
+      text-align: center!important;
+      line-height: 30px;
+    }
+  }
+
 }
 
 @media (max-width: @screen-sm-min) {
+
+  .product-item-picture{
+    margin-bottom: 15px;
+    img{
+      display: inline;
+      max-width: 50%;
+    }
+  }
+
+  /* outer div */
+  .row-offcanvas {
+    position: relative;
+    left: 0;
+    -webkit-transition: left .3s ease-in;
+    -most-transition: left .3s ease-in;
+    transition: left .3s ease-in;
+  }
+
+  /* sidebar */
+  .sidebar-offcanvas {
+    left: -90%;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #F7F7F7;
+    padding: 10px;
+  }
+
+  /* content */
+  .row-offcanvas.active {
+    left: 90%;
+  }
+  /* content */
+
+  .row-offcanvas.off {
+    left: 0!important;
+  }
+
+
   header{
     &.navbar-default{
       position: relative!important;
@@ -147,6 +235,18 @@
     position: relative!important;
     top: 0!important;
   }
+
+  .catalog-page-header{
+    text-align: center;
+    .sorting-product-holder{
+      text-align: center!important;
+      line-height: 30px;
+    }
+  }
+
+  .sku-holder{
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -154,8 +254,23 @@
 //
 // Columns, offsets, pushes, and pulls for the desktop device range.
 
+@media (max-width: @screen-md-min) {
+  .product-item-picture{
+    margin-bottom: 15px;
+    img{
+      display: inline;
+      max-width: 100%;
+    }
+  }
+}
 @media (min-width: @screen-md-min) {
   .make-grid(md);
+  .catalog-page-header{
+    text-align: left;
+    .sorting-product-holder{
+      line-height: 59px;
+    }
+  }
 }
 
 
@@ -165,6 +280,7 @@
 
 @media (min-width: @screen-lg-min) {
   .make-grid(lg);
+  .smart-breadcrumbs,
   .index-promo-holder{
     margin-top: 135px;
   }
