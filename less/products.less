@@ -66,3 +66,371 @@
     }
   }
 }
+.main-product-holder{
+  .main-product-quality{
+    float: left;
+    padding: 0;
+    margin: 10px 10px 0 0;
+    list-style-type: none;
+    li{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  .product-characteristics{
+    .row{
+      padding: 7px 0;
+      font-size: 13px;
+      &:nth-child(even){
+        background-color: #f3f2f2;
+      }
+    }
+
+    .articul{
+      font-size: 13px;
+    }
+
+    .availability{
+      .label{
+        font-size: 12px;
+        font-weight: normal;
+        border-radius: 0;
+      }
+    }
+
+    .sku-items-holder{
+      .sku-items-row{
+        border-top: solid 1px #dddddd;
+        padding: 7px 0;
+        .sku-items-row-title{
+          margin-bottom: 5px;
+        }
+        .btn-group{
+          .btn{
+            padding: 7px;
+          }
+        }
+        .mCSB_container{
+          width: 100%!important;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .delivery-holder{
+      .col-xs-6{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: solid 1px #dddddd;
+        border-bottom: solid 1px #dddddd;
+        text-align: center;
+        a{
+          display: block;
+          margin-top: 5px;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .cost-holder{
+      .regular-price{
+        display: inline-block;
+        vertical-align: top;
+        font-family: @font-family-sans-serif-medium;
+        font-size: 26px;
+        .fa{
+          font-size: 24px;
+        }
+      }
+
+      .old-price{
+        display: inline-block;
+        vertical-align: top;
+        font-family: @font-family-sans-serif-medium;
+        font-size: 16px;
+        text-decoration: line-through;
+        color: #db5c55;
+        .fa{
+          font-size: 14px;
+        }
+      }
+
+    }
+  }
+
+  .price-buy-holder{
+    background-color: #ffffff!important;
+  }
+
+  .item-products-options{
+    margin-top: 7px;
+    margin-left: 10px;
+    float: right;
+  }
+
+  .product-kit-holder{
+    border: solid 1px #dddddd;
+    padding: 10px 10px 0 10px;
+    margin: 15px 0;
+    h3{
+      color: #f26c00;
+      margin-top: 0;
+    }
+    .product-kit-cost-summ{
+      margin: 0 -10px;
+      padding: 10px;
+      background-color: #f3f4f3;
+      text-align: center;
+      .regular-price{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 5px;
+        font-size: 16px;
+        font-family: @font-family-sans-serif-medium;
+        .fa{
+          font-size: 15px;
+        }
+      }
+      .discount-price{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 7px;
+        margin-left: 10px;
+        text-decoration: line-through;
+        font-size: 15px;
+        font-family: @font-family-sans-serif-medium;
+        color: #888888;
+        .fa{
+          font-size: 14px;
+        }
+      }
+      .profit-price{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 7px;
+        margin-left: 10px;
+        font-size: 15px;
+        font-family: @font-family-sans-serif-medium;
+        color: #f26c00;
+        .fa{
+          font-size: 14px;
+        }
+      }
+      .btn{
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .product-kit-products-list{
+      padding-bottom: 15px;
+
+      label{
+        padding: 0;
+        margin-right: 15px;
+        display: table-cell;
+      }
+
+      .btn{
+        white-space: normal!important;
+      }
+
+      .product-kit-item{
+        padding: 10px;
+        margin: 10px;
+        width: 170px;
+        height: 225px;
+        background-color: #ffffff;
+
+        a{
+          color: #575a5d;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+
+        .promo-product-image-holder{
+          display: block;
+          text-align: center;
+          height: 110px;
+        }
+
+        figcaption{
+          margin: 10px 0;
+          text-align: center;
+          height: 40px;
+          overflow: hidden;
+        }
+
+        .articul{
+          font-size: 12px;
+        }
+
+        .product-price{
+          text-align: center;
+          font-size: 18px!important;
+          font-family: @font-family-sans-serif-bold;
+          .fa-rub{
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+.product-descriptions-tabs{
+  margin: 15px  0 25px 0;
+  .nav-tabs{
+    li{
+      width: 50%;
+      text-align: center;
+      > a{
+        background-color: #f3f4f3;
+        margin-right: 0;
+        border-bottom-color: #ddd;
+      }
+    }
+  }
+  .tab-content{
+    padding: 0 0 10px 0;
+    .col-md-9{
+      border-right: solid 1px #dddddd;
+    }
+
+    .table-zebra{
+      tbody{
+        tr{
+          &:nth-child(odd){
+            td{
+              background-color: #f5f5f5;
+            }
+          }
+        }
+      }
+      .fa-question-circle{
+        color: #e98704;
+      }
+    }
+    .col-docs-info{
+      h4{
+        margin: 20px 0 10px 0;
+      }
+      .list-unstyled{
+        li{
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  #reviews{
+      form{
+        margin: 15px 0;
+
+        .score-rating{
+          margin: 10px 0;
+        }
+
+        label{
+          font-weight: normal;
+        }
+        .score-rating{
+          float: left;
+        }
+
+        textarea.form-control{
+          height: 123px;
+          resize: none;
+        }
+
+      }
+
+    .review-list{
+      padding: 0;
+      margin: 15px 0;
+      list-style-type: none;
+
+      li{
+        border-bottom: solid 1px #dddddd;
+      }
+
+      .score-rating{
+        float: left;
+        margin: 10px 0;
+      }
+
+      .fa{
+        color: #0095da;
+      }
+
+      .usefulness{
+        color: #838383;
+        padding-bottom: 10px;
+        .yes{
+          color: @brand-success;
+        }
+        .no{
+          color: @brand-danger;
+        }
+      }
+
+    }
+
+  }
+
+}
+.score-rating {
+  float: right;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  border: 0;
+  font-size: 0;
+
+  input {
+    position:absolute;
+    top: -2em;
+    clip:rect(0,0,0,0);
+  }
+
+  legend {
+    overflow: hidden;
+    height: 0;
+  }
+  label {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 17px;
+    height: 15px;
+    overflow: hidden;
+    text-indent: 100%;
+    &:before {
+      content: "\f005";
+      font-family: 'Fontawesome';
+      font-size: 13px;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      text-indent: 0;
+      line-height: 15px;
+      color: #d3d2d2;
+    }
+
+    &:hover:before,
+    &:hover ~ label:before,
+    input:checked ~ &:before {
+      content: "\f005";
+      font-family: 'Fontawesome';
+      color: #0095da;
+    }
+    &:active {
+      position: relative;
+      top: 1px;
+    }
+  }
+}

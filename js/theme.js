@@ -65,3 +65,11 @@ $("#sliderRangeWidth").ionRangeSlider({
     prettify: false,
     hasGrid: true
 });
+
+
+$(".scroll-container").mCustomScrollbar({
+    horizontalScroll:true,
+    autoDraggerLength:true,
+    contentTouchScroll: true,
+    theme: "dark-thick"
+});

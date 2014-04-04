@@ -425,8 +425,9 @@ aside{
       display: inline-block;
       vertical-align: top;
 
-      &:hover{
-        .product-holder{
+      .product-holder{
+        &:focus,
+        &:hover{
           position: absolute;
           top: 0;
           left: 0;
@@ -438,7 +439,6 @@ aside{
           }
         }
       }
-
     }
 
     .product-holder{
@@ -446,7 +446,6 @@ aside{
       margin-bottom: 10px;
       background-color: #ffffff;
       &:hover{
-        .box-shadow(0 0px 10px rgba(0,0,0,.2));
         .box-shadow(0 0px 10px rgba(0,0,0,.2));
       }
 

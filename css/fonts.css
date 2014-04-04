@@ -2,10 +2,12 @@
 url('../fonts/pfsquaresansproregular-webfont.woff') format('woff'),
 url('../fonts/pfsquaresansproregular-webfont.ttf') format('truetype'),
 url('../fonts/pfsquaresansproregular-webfont.svg#pf_square_sans_proregular') format('svg');font-weight:normal;font-style:normal}
-@font-face{font-family:'PF Square Sans Medium';src:url('../fonts/pfsquaresanspro-medium-webfont.eot');src:url('../fonts/pfsquaresanspro-medium-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/pfsquaresanspro-medium-webfont.woff') format('woff'),
-url('../fonts/pfsquaresanspro-medium-webfont.ttf') format('truetype'),
-url('../fonts/pfsquaresanspro-medium-webfont.svg#pf_square_sans_proregular') format('svg');font-weight:normal;font-style:normal}
+
+@font-face{font-family:'PF Square Sans Medium';src:url('../fonts/PFSquareSansPro-Medium.eot');src:url('../fonts/PFSquareSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+url('../fonts/PFSquareSansPro-Medium.woff') format('woff'),
+url('../fonts/PFSquareSansPro-Medium.ttf') format('truetype'),
+url('../fonts/PFSquareSansPro-Medium.svg#pf_square_sans_proregular') format('svg');font-weight:normal;font-style:normal}
+
 @font-face{font-family:'PF Square Sans Probold';src:url('../fonts/pfsquaresanspro-bold-webfont.eot');src:url('../fonts/pfsquaresanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
 url('../fonts/pfsquaresanspro-bold-webfont.woff') format('woff'),
 url('../fonts/pfsquaresanspro-bold-webfont.svg#pf_square_sans_probold') format('svg'),

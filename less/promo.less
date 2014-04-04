@@ -157,3 +157,77 @@
     }
   }
 }
+
+.promo-product-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+  white-space: nowrap;
+
+  li{
+    float: left;
+  }
+
+  .promo-product{
+    padding: 10px;
+    width: 200px;
+    height: 240px;
+    margin:10px 12px;
+    .box-shadow(0 0 10px rgba(0,0,0,.095));
+
+    a{
+      color: #575a5d;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+    .promo-product-category{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .promo-product-image-holder{
+      display: block;
+      text-align: center;
+      padding: 0 15px!important;
+      height: 110px;
+    }
+
+    figcaption{
+      padding: 10px 0;
+      text-align: center;
+      height: 59px;
+      overflow: hidden;
+    }
+
+    .product-price{
+      text-align: center;
+      font-size: 15px;
+      font-family: @font-family-sans-serif-bold;
+      .fa-rub{
+        font-size: 13px;
+      }
+    }
+
+    .item-products-options{
+      position: relative;
+      text-align: center;
+      font-size: 11px;
+      &.active{
+        a{
+          color: @brand-danger;
+          &:hover{
+            color: @btn-danger-bg;
+          }
+        }
+      }
+      a{
+        color: #888888;
+        &:hover{
+          color: #008ac4;
+        }
+      }
+    }
+  }
+}
