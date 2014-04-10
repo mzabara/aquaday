@@ -255,75 +255,10 @@
 
         <a data-toggle="collapse" data-parent="#catalogNav" href="#shoppingCartHolder">
             <i class="fa fa-shopping-cart"></i>
-                            <span class="item-title">
-                                2 товара / <strong>600 000</strong> <i class="fa fa-rub"></i> <b class="caret"></b>
-                            </span>
+            <span class="item-title">
+                Корзина пуста
+            </span>
         </a>
-
-        <div class="collapse-panel-shopping-cart">
-            <div id="shoppingCartHolder" class="collapse">
-                <table class="table table-hover">
-                    <tbody>
-                    <tr>
-                        <td class="col-xs-2">
-                            <a href="">
-                                <img src="images/product/1.jpg" alt="" class="img-responsive"/>
-                            </a>
-                        </td>
-                        <td class="col-xs-7">
-                            <div class="label label-success availability">В наличии</div>
-                            <a href="" class="product-title">Кухонная мойка Blanco ADON XL 6 S</a>
-                                            <span class="cost">
-                                                26 250 <i class="fa fa-rub"></i>
-                                            </span>
-                        </td>
-                        <td class="col-xs-1 text-right">
-                            <a href=""><i class="fa fa-times"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-xs-2">
-                            <a href="">
-                                <img src="images/product/2.jpg" alt="" class="img-responsive"/>
-                            </a>
-                        </td>
-                        <td class="col-xs-7">
-                            <div class="label label-success availability">В наличии</div>
-                            <a href="" class="product-title">Кухонная мойка Blanco Attika 60/A</a>
-                                            <span class="cost">
-                                                76 300 <i class="fa fa-rub"></i>
-                                            </span>
-                        </td>
-                        <td class="col-xs-1 text-right">
-                            <a href=""><i class="fa fa-times"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-xs-2">
-                            <a href="">
-                                <img src="images/product/3.jpg" alt="" class="img-responsive"/>
-                            </a>
-                        </td>
-                        <td class="col-xs-7">
-                            <div class="label label-danger availability">Под заказ</div>
-                            <a href="" class="product-title">Кухонная мойка Blanco AXON II 6 S</a>
-                                            <span class="cost">
-                                                63 800 <i class="fa fa-rub"></i>
-                                            </span>
-                        </td>
-                        <td class="col-xs-1 text-right">
-                            <a href=""><i class="fa fa-times"></i></a>
-                        </td>
-                    </tr>
-                    <tr class="total-cost">
-                        <td colspan="4" class="text-right">
-                            Итого: <span class="summ-cost"> 600 000 <i class="fa fa-rub"></i> </span> <a href="#" class="btn btn-success btn-sm">Оформить заказ</a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
     </li>
 </ul>
 </div>
@@ -337,7 +272,8 @@
     <div class="container">
         <ol class="breadcrumb">
             <li><a href="#">Главная</a></li>
-            <li class="active">Корзина покупок</li>
+            <li><a href="#">Корзина покупок</a></li>
+            <li class="active">Оформление заказа</li>
         </ol>
     </div>
 </section>
@@ -346,278 +282,204 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1>Корзина покупок</h1>
+                <h1>Оформление заказа</h1>
             </div>
         </div>
     </div>
 </section>
 
-<section class="shopping-cart-holder">
+<section class="checkout-holder">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-sm-3 text-center">
-                <div class="product-item-picture">
-                    <a href="#">
-                        <span class="label label-danger">хит</span>
-                        <img src="images/product/1.jpg" alt="" class="img-responsive"/>
-                    </a>
+            <div class="col-md-9">
+                <div class="callout">
+                    Можно воспользоваться автоматическим заполнением: <a href="#"><img src="images/ya-btn.png" alt=""/></a>
                 </div>
+
+                <form role="form">
+                    <div class="page-header">
+                        <h3>Контактная информация</h3>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <label class="radio-inline">
+                                <input type="radio" id="inlineRadio1" value="option1" checked> <strong>Физическое лицо</strong>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="inlineRadio2" value="option2"> <strong>Юридическое лицо</strong>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputFIO" class="control-label">Ф.И.О.:</label>
+                            <input type="text" class="form-control" id="inputFIO">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="inputEmail" class="control-label">Email:</label>
+                            <input type="text" class="form-control" id="inputEmail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputPhone" class="control-label">Телефон:</label>
+                            <input type="text" class="form-control" id="inputPhone">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label class="control-label">Город:</label>
+                            <p class="form-control-static">
+                                <i class="fa fa-map-marker fa-lg"></i> <a href="#changeRegion" data-toggle="modal" class="ajax-link">Россия, Санкт-Петербург</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <label for="textareaAddres" class="control-label">Адрес доставки:</label>
+                            <textarea class="form-control" id="textareaAddres">Пролетарская 416</textarea>
+                        </div>
+                    </div>
+                    <div class="page-header">
+                        <h3>Службы доставки</h3>
+                    </div>
+                    <div class="tk-list">
+                        <div class="tk-item-title">
+                            <h4>Доставка курьером</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="tk-item-options">
+                                    <div class="form-group">
+                                        <label class="radio">
+                                            <input type="radio" value="option1" checked> до двери <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="images/icons/fast-delivery.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tk-list">
+                        <div class="tk-item-title">
+                            <h4>ПЭК</h4>
+                            <div class="help-block">
+                                <small>Помимо сети филиалов и городов Золотого Кольца, Компания «ПЭК» производит доставку грузов в областные города, расположенные в регионах присутствия Компании. Доставка может быть произведена в любой населённый пункт, расположенный на расстоянии до 300 км от любого филиала Компании «ПЭК».</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="tk-item-options">
+                                    <div class="form-group">
+                                        <label class="radio">
+                                            <input type="radio" id="inlineRadio3" value="option1" checked> до филиала <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="radio">
+                                            <input type="radio" id="inlineRadio4" value="option1" checked> до двери <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="images/icons/pe.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tk-list">
+                        <div class="tk-item-title">
+                            <h4>Автотрейдинг</h4>
+                            <div class="help-block"><small>«Автотрейдинг» входит в число крупнейших транспортно-экспедиционных компаний в России, которая почти 20 лет работает на рынке грузоперевозок. На сегодняшний день сеть «Автотрейдинга» насчитывает 90 филиалов по всей стране, обеспечивая доставку грузов более чем в 1900 населенных пунктов от Калининграда до Владивостока.</small></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="tk-item-options">
+                                    <div class="form-group">
+                                        <label class="radio">
+                                            <input type="radio" id="inlineRadio5" value="option1" checked> до филиала <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="radio">
+                                            <input type="radio" id="inlineRadio6" value="option1" checked> до двери <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="images/icons/avt.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tk-list">
+                        <div class="tk-item-title">
+                            <h4>Ратек</h4>
+                            <div class="help-block"><small>В работе с клиентами компанию «Деловые линии» отличает быстрота выполнения заказов, предоставление исчерпывающей информации на любые запросы, поступающие по телефону или электронной почте, тщательная разработка, с учётом пожеланий клиента, логистической схемы перевозки, гибкая система ценообразования, конкурентоспособные цены.</small></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="tk-item-options">
+                                    <div class="form-group">
+                                        <label class="radio">
+                                            <input type="radio" id="inlineRadio7" value="option1" checked> до филиала <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="radio">
+                                            <input type="radio" id="inlineRadio8" value="option1" checked> до двери <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="images/icons/ratek.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-header">
+                        <h3>Способы оплаты</h3>
+                    </div>
+                    <div class="shopping-cart-control">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="#" class="btn btn-default"><i class="fa fa-angle-double-left fa-lg"></i> Вернуться назад</a>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <a href="#" class="btn btn-success">Оформить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
             </div>
-            <div class="col-md-10">
-                <h4>
-                    <a href="#">Blanco ADON XL 6 S</a>
-                </h4>
-                <div class="row row-flex">
-                    <div class="col-md-6 col-sm-9">
-                        <div class="availability">
-                            <div class="label label-success">В наличии</div>
-                            <div class="articul">Артикул: 39987</div>
+            <div class="col-md-3">
+                <div class="your-oder" role="complementary" data-spy="affix" data-offset-top="100" data-offset-bottom="500">
+                    <h4>Ваш заказ</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            Товаров на сумму:
                         </div>
-                        <div class="row sku-holder">
-                            <ul class="sku-list">
-                                <li class="dropdown col-xs-6">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        <b class="caret pull-right"></b>
-                                        <img src="images/colorpicker/1.jpg" alt=""/> Жасмин
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/1.jpg" alt=""/> Жасмин
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/2.jpg" alt=""/> Серый беж
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/3.jpg" alt=""/> Шампань
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/4.jpg" alt=""/> Кофе
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/5.jpg" alt=""/> Белый
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/6.jpg" alt=""/> Серый шелк
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/7.jpg" alt=""/> Алюметалик
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/8.jpg" alt=""/> Темная скала
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/9.jpg" alt=""/> Антрацит
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown col-xs-6">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        <b class="caret pull-right"></b>
-                                        <img src="images/colorpicker/2_1.jpg" alt=""/> Мойка справа
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/2_1.jpg" alt=""/> Мойка справа
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="images/colorpicker/2_2.jpg" alt=""/> Мойка слева
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <div class="col-xs-5">
+                            000 000 <i class="fa fa-rub"></i>
                         </div>
                     </div>
-                    <div class="clearfix visible-sm"></div>
-                    <div class="col-md-2 col-sm-3 col-xs-4 text-center">
-                        <div class="input-group increment">
-                            <span class="input-group-addon minus"><i class="fa fa-minus"></i></span>
-                            <span class="input-group-addon plus"><i class="fa fa-plus"></i></span>
-                            <input type="text" class="form-control text-center" value="1">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            Стоимость доставки:
+                        </div>
+                        <div class="col-xs-5">
+                            000 000 <i class="fa fa-rub"></i>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-5 text-center">
-                        <div class="regular-price">000 000 <i class="fa fa-rub"></i></div>
-                        <div class="discount-price">Скидка: 000 000 <i class="fa fa-rub"></i></div>
-                    </div>
-                    <div class="col-md-1 col-sm-3 col-xs-3 text-center">
-                        <a href="#" class="close-link">
-                            <i class="fa fa-times"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-3 text-center">
-                <div class="product-item-picture">
-                    <a href="#">
-                        <span class="label label-success">новинка</span>
-                        <img src="images/product/2.jpg" alt="" class="img-responsive"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-10">
-                <h4>
-                    <a href="#">Blanco ADON XL 6 S</a>
-                </h4>
-                <div class="row row-flex">
-                    <div class="col-md-6 col-sm-9">
-                        <div class="availability">
-                            <div class="label label-success">В наличии</div>
-                            <div class="articul">Артикул: 39987</div>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            Итого к оплате:
+                        </div>
+                        <div class="col-xs-5">
+                            000 000 <i class="fa fa-rub"></i>
                         </div>
                     </div>
-                    <div class="clearfix visible-sm"></div>
-                    <div class="col-md-2 col-sm-3 col-xs-4 text-center">
-                        <div class="input-group increment">
-                            <span class="input-group-addon minus"><i class="fa fa-minus"></i></span>
-                            <span class="input-group-addon plus"><i class="fa fa-plus"></i></span>
-                            <input type="text" class="form-control text-center" value="1">
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-5 text-center">
-                        <div class="regular-price">000 000 <i class="fa fa-rub"></i></div>
-                        <div class="discount-price">Скидка: 000 000 <i class="fa fa-rub"></i></div>
-                    </div>
-                    <div class="col-md-1 col-sm-3 col-xs-3 text-center">
-                        <a href="#" class="close-link">
-                            <i class="fa fa-times"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-3 text-center">
-                <div class="product-item-picture">
-                    <a href="#">
-                        <span class="label label-warning">акция</span>
-                        <img src="images/product/3.jpg" alt="" class="img-responsive"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-10">
-                <h4>
-                    <a href="#">Blanco ADON XL 6 S</a>
-                </h4>
-                <div class="row row-flex">
-                    <div class="col-md-6 col-sm-9">
-                        <div class="availability">
-                            <div class="label label-success">В наличии</div>
-                            <div class="articul">Артикул: 39987</div>
-                        </div>
-                    </div>
-                    <div class="clearfix visible-sm"></div>
-                    <div class="col-md-2 col-sm-3 col-xs-4 text-center">
-                        <div class="input-group increment">
-                            <span class="input-group-addon minus"><i class="fa fa-minus"></i></span>
-                            <span class="input-group-addon plus"><i class="fa fa-plus"></i></span>
-                            <input type="text" class="form-control text-center" value="1">
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-5 text-center">
-                        <div class="regular-price">000 000 <i class="fa fa-rub"></i></div>
-                        <div class="discount-price">Скидка: 000 000 <i class="fa fa-rub"></i></div>
-                    </div>
-                    <div class="col-md-1 col-sm-3 col-xs-3 text-center">
-                        <a href="#" class="close-link">
-                            <i class="fa fa-times"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-3 text-center">
-                <div class="product-item-picture">
-                    <a href="#">
-                        <span class="label label-info">супер скидки</span>
-                        <img src="images/product/4.jpg" alt="" class="img-responsive"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-10">
-                <h4>
-                    <a href="#">Blanco ADON XL 6 S</a>
-                </h4>
-                <div class="row row-flex">
-                    <div class="col-md-6 col-sm-9">
-                        <div class="availability">
-                            <div class="label label-default">Ожидается поставка 25.04.2014</div>
-                            <div class="articul">Артикул: 39987</div>
-                        </div>
-                    </div>
-                    <div class="clearfix visible-sm"></div>
-                    <div class="col-md-2 col-sm-3 col-xs-4 text-center">
-                        <div class="input-group increment">
-                            <span class="input-group-addon minus"><i class="fa fa-minus"></i></span>
-                            <span class="input-group-addon plus"><i class="fa fa-plus"></i></span>
-                            <input type="text" class="form-control text-center" value="1">
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-5 text-center">
-                        <div class="regular-price">000 000 <i class="fa fa-rub"></i></div>
-                        <div class="discount-price">Скидка: 000 000 <i class="fa fa-rub"></i></div>
-                    </div>
-                    <div class="col-md-1 col-sm-3 col-xs-3 text-center">
-                        <a href="#" class="close-link">
-                            <i class="fa fa-times"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="shopping-cart-total-holder">
-            <div class="row">
-                <div class="col-md-3">
-                    <form role="form">
-                        <div class="form-group has-success has-feedback">
-                            <label for="cuponInput">Введите код купона для скидки:</label>
-                            <input type="text" class="form-control" id="cuponInput">
-                            <span class="fa fa-check form-control-feedback"></span>
-                        </div>
-                     </form>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="regular-price text-center">Товаров на: 000 000 <i class="fa fa-rub"></i></div>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="regular-price">Сумма скидки: 000 000 <i class="fa fa-rub"></i></div>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="regular-price">Итого на: 000 000 <i class="fa fa-rub"></i></div>
-                </div>
-            </div>
-        </div>
-        <div class="shopping-cart-control">
-            <div class="row">
-                <div class="col-xs-6">
-                    <a href="#" class="btn btn-default">Пересчитать</a>
-                </div>
-                <div class="col-xs-6 text-right">
-                    <a href="#" class="btn btn-success">Оформить заказ</a>
                 </div>
             </div>
         </div>
@@ -789,7 +651,81 @@
     </section>
 
 </footer>
-
+<div class="modal fade" id="changeRegion">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Города, в которые мы можем доставить Вашу покупку</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <input type="text" class="form-control" placeholder="Выберите свой город доставки" x-webkit-speech="x-webkit-speech">
+                </form>
+                <h5>Возможен самовывоз в городах:</h5>
+                <div class="row">
+                    <ul class="col-xs-4 list-unstyled">
+                        <li><a href="">Анапа</a></li>
+                        <li><a href="">Архангельск</a></li>
+                        <li><a href="">Астрахань</a></li>
+                        <li><a href="">Барнаул</a></li>
+                        <li><a href="">Белгород</a></li>
+                        <li><a href="">Благовещенск</a></li>
+                        <li><a href="">Брянск</a></li>
+                        <li><a href="">Владивосток</a></li>
+                        <li><a href="">Владикавказ</a></li>
+                        <li><a href="">Владимир</a></li>
+                        <li><a href="">Волгоград</a></li>
+                        <li><a href="">Воронеж</a></li>
+                        <li><a href="">Екатеринбург</a></li>
+                        <li><a href="">Иваново</a></li>
+                        <li><a href="">Ижевск</a></li>
+                        <li><a href="">Иркутск</a></li>
+                        <li><a href="">Казань</a></li>
+                    </ul>
+                    <ul class="col-xs-4 list-unstyled">
+                        <li><a href="">Анапа</a></li>
+                        <li><a href="">Архангельск</a></li>
+                        <li><a href="">Астрахань</a></li>
+                        <li><a href="">Барнаул</a></li>
+                        <li><a href="">Белгород</a></li>
+                        <li><a href="">Благовещенск</a></li>
+                        <li><a href="">Брянск</a></li>
+                        <li><a href="">Владивосток</a></li>
+                        <li><a href="">Владикавказ</a></li>
+                        <li><a href="">Владимир</a></li>
+                        <li><a href="">Волгоград</a></li>
+                        <li><a href="">Воронеж</a></li>
+                        <li><a href="">Екатеринбург</a></li>
+                        <li><a href="">Иваново</a></li>
+                        <li><a href="">Ижевск</a></li>
+                        <li><a href="">Иркутск</a></li>
+                        <li><a href="">Казань</a></li>
+                    </ul>
+                    <ul class="col-xs-4 list-unstyled">
+                        <li><a href="">Анапа</a></li>
+                        <li><a href="">Архангельск</a></li>
+                        <li><a href="">Астрахань</a></li>
+                        <li><a href="">Барнаул</a></li>
+                        <li><a href="">Белгород</a></li>
+                        <li><a href="">Благовещенск</a></li>
+                        <li><a href="">Брянск</a></li>
+                        <li><a href="">Владивосток</a></li>
+                        <li><a href="">Владикавказ</a></li>
+                        <li><a href="">Владимир</a></li>
+                        <li><a href="">Волгоград</a></li>
+                        <li><a href="">Воронеж</a></li>
+                        <li><a href="">Екатеринбург</a></li>
+                        <li><a href="">Иваново</a></li>
+                        <li><a href="">Ижевск</a></li>
+                        <li><a href="">Иркутск</a></li>
+                        <li><a href="">Казань</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
