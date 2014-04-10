@@ -658,40 +658,42 @@ aside{
           }
 
         }
-
-        .product-item-picture{
-          text-align: center;
-          a{
-            display: inline-block;
-            position: relative;
-          }
-          img{
-            border: solid 1px #d3d2d2;
-          }
-          .label{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 74px;
-            height: 74px;
-            background: url("../images/promo-sprite.png") 0 0 no-repeat transparent;
-            font-size: 0;
-            margin: 0;
-            padding: 0;
-            &.label-warning{
-              background-position: 0 0;
-            }
-            &.label-danger{
-              background-position:0 -74px;
-            }
-            &.label-success{
-              background-position:0 -148px;
-            }
-          }
-        }
-
       }
     }
 
+  }
+}
+
+.product-item-picture{
+  text-align: center;
+  a{
+    display: inline-block;
+    position: relative;
+  }
+  img{
+    border: solid 1px #d3d2d2;
+  }
+  .label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 74px;
+    background: url("../images/promo-sprite.png") 0 0 no-repeat transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    &.label-warning{
+      background-position: 0 0;
+    }
+    &.label-danger{
+      background-position:0 -74px;
+    }
+    &.label-success{
+      background-position:0 -148px;
+    }
+    &.label-info{
+      background-position:0 -222px;
+    }
   }
 }
