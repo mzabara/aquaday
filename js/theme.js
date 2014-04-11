@@ -69,17 +69,29 @@ $("#sliderRangeWidth").ionRangeSlider({
 });
 
 
-$(".scroll-container").mCustomScrollbar({
-    horizontalScroll:true,
-    autoDraggerLength:true,
-    contentTouchScroll: true,
-    theme: "dark-thick",
-    scrollButtons:{
-        enable:true
-    },
-    advanced:{
-        autoExpandHorizontalScroll:true,
-        updateOnContentResize: true
-    }
-});
+    $(".scroll-container").mCustomScrollbar({
+        horizontalScroll:true,
+        autoDraggerLength:true,
+        contentTouchScroll: true,
+        theme: "dark-thick",
+        scrollButtons:{
+            enable:true
+        }
+    });
+
+    $(".scroll-container-box").mCustomScrollbar({
+        horizontalScroll:true,
+        autoDraggerLength:true,
+        contentTouchScroll: true,
+        theme: "dark-thick",
+        scrollButtons:{
+            enable:true
+        }
+        ,
+        advanced:{
+            autoExpandHorizontalScroll:true,
+            updateOnContentResize: true,
+            updateOnBrowserResize: true
+        }
+    });
 });
