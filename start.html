@@ -20,11 +20,25 @@
     <link href="images/logo.gif" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
     <link href="images/logo.gif" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fotorama.js"></script> <!-- 9 KB -->
+    <script src="js/jquery.mousewheel.min.js"></script> <!-- 9 KB -->
+    <script src="js/jquery.mCustomScrollbar.min.js"></script> <!-- 9 KB -->
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/theme.js"></script>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="css/fotorama.css" rel="stylesheet"> <!-- 2 KB -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -342,7 +356,7 @@
 
                     <div class="tab-pane fade active in" id="newst">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-3">
+                            <div class="col-xs-12 col-sm-2">
                                 <a href="#" class="thumbnail">
                                     <img src="images/product/1.jpg" alt="" class="img-responsive"/>
                                     <span class="caption">
@@ -355,7 +369,7 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="col-xs-12 col-sm-3">
+                            <div class="col-xs-12 col-sm-2">
                                 <a href="#" class="thumbnail">
                                     <img src="images/product/2.jpg" alt="" class="img-responsive"/>
                                     <span class="caption">
@@ -368,7 +382,7 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="col-xs-12 col-sm-3">
+                            <div class="col-xs-12 col-sm-2">
                                 <a href="#" class="thumbnail">
                                     <img src="images/product/3.jpg" alt="" class="img-responsive"/>
                                     <span class="caption">
@@ -381,7 +395,33 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="col-xs-12 col-sm-3">
+                            <div class="col-xs-12 col-sm-2">
+                                <a href="#" class="thumbnail">
+                                    <img src="images/product/4.jpg" alt="" class="img-responsive"/>
+                                    <span class="caption">
+                                        <span class="caption-title">
+                                            Samura PRO-S SP-0210/G-10
+                                        </span>
+                                        <span class="caption-proudct-cost">
+                                            <span class="regular-price">3 290 <i class="fa fa-rub"></i></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-2">
+                                <a href="#" class="thumbnail">
+                                    <img src="images/product/3.jpg" alt="" class="img-responsive"/>
+                                    <span class="caption">
+                                        <span class="caption-title">
+                                            Кухонная мойка Blanco AXON II 6 S
+                                        </span>
+                                        <span class="caption-proudct-cost">
+                                            <span class="regular-price">63 800 <i class="fa fa-rub"></i></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-2">
                                 <a href="#" class="thumbnail">
                                     <img src="images/product/4.jpg" alt="" class="img-responsive"/>
                                     <span class="caption">
@@ -683,10 +723,278 @@
                     </div>
 
                     <div class="collapse-body">
-                        a
+                        <div class="scroll-container" style="height: 340px;">
+                            <ul class="product-list compare-list">
+                                <li>
+                                    <div class="product-holder">
+                                        <div class="product-item-title">
+                                            <h3>
+                                                <a href="">Blanco ADON XL 6 S</a>
+                                            </h3>
+                                            <div class="articul-score-holder">
+                                                <div class="score-rating">
+                                                    <input type="radio" id="score-5" name="score" value="5"/>
+                                                    <label title="5 stars" for="score-5">5 stars</label>
+                                                    <input type="radio" id="score-4" name="score" value="4"/>
+                                                    <label title="4 stars" for="score-4">4 stars</label>
+                                                    <input type="radio" id="score-3" name="score" value="3"/>
+                                                    <label title="3 stars" for="score-3">3 stars</label>
+                                                    <input type="radio" id="score-2" name="score" value="2"/>
+                                                    <label title="2 stars" for="score-2">2 stars</label>
+                                                    <input type="radio" id="score-1" name="score" value="1"/>
+                                                    <label title="1 stars" for="score-1">1 stars</label>
+                                                </div>
+                                                <div class="articul">
+                                                    Арт.: 345879
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-content">
+                                            <div class="product-item-picture">
+                                                <a href="">
+                                                    <span class="label label-success">Новинка</span>
+                                                    <img src="images/product/1.jpg" alt="" class="img-responsive"/>
+                                                </a>
+                                            </div>
+                                            <div class="product-cost">
+                                                <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
+                                                <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
+                                            </div>
+                                            <div class="product-buy-control">
+                                                <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                            </div>
+                                            <div class="close-product">
+                                                <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-holder">
+                                        <div class="product-item-title">
+                                            <h3>
+                                                <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                            </h3>
+                                            <div class="articul-score-holder">
+                                                <div class="score-rating">
+                                                    <input type="radio" id="score-5" name="score" value="5"/>
+                                                    <label title="5 stars" for="score-5">5 stars</label>
+                                                    <input type="radio" id="score-4" name="score" value="4"/>
+                                                    <label title="4 stars" for="score-4">4 stars</label>
+                                                    <input type="radio" id="score-3" name="score" value="3"/>
+                                                    <label title="3 stars" for="score-3">3 stars</label>
+                                                    <input type="radio" id="score-2" name="score" value="2"/>
+                                                    <label title="2 stars" for="score-2">2 stars</label>
+                                                    <input type="radio" id="score-1" name="score" value="1"/>
+                                                    <label title="1 stars" for="score-1">1 stars</label>
+                                                </div>
+                                                <div class="articul">
+                                                    Арт.: 345879
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-content">
+                                            <div class="product-item-picture">
+                                                <a href="">
+                                                    <img src="images/product/2.jpg" alt="" class="img-responsive"/>
+                                                </a>
+                                            </div>
+                                            <div class="product-cost">
+                                                <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                                <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                            </div>
+                                            <div class="product-buy-control">
+                                                <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                            </div>
+                                            <div class="close-product">
+                                                <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-holder">
+                                        <div class="product-item-title">
+                                            <h3>
+                                                <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                            </h3>
+                                            <div class="articul-score-holder">
+                                                <div class="score-rating">
+                                                    <input type="radio" id="score-5" name="score" value="5"/>
+                                                    <label title="5 stars" for="score-5">5 stars</label>
+                                                    <input type="radio" id="score-4" name="score" value="4"/>
+                                                    <label title="4 stars" for="score-4">4 stars</label>
+                                                    <input type="radio" id="score-3" name="score" value="3"/>
+                                                    <label title="3 stars" for="score-3">3 stars</label>
+                                                    <input type="radio" id="score-2" name="score" value="2"/>
+                                                    <label title="2 stars" for="score-2">2 stars</label>
+                                                    <input type="radio" id="score-1" name="score" value="1"/>
+                                                    <label title="1 stars" for="score-1">1 stars</label>
+                                                </div>
+                                                <div class="articul">
+                                                    Арт.: 345879
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-content">
+                                            <div class="product-item-picture">
+                                                <a href="">
+                                                    <img src="images/product/3.jpg" alt="" class="img-responsive"/>
+                                                </a>
+                                            </div>
+                                            <div class="product-cost">
+                                                <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                                <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                            </div>
+                                            <div class="product-buy-control">
+                                                <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                            </div>
+                                            <div class="close-product">
+                                                <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-holder">
+                                        <div class="product-item-title">
+                                            <h3>
+                                                <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                            </h3>
+                                            <div class="articul-score-holder">
+                                                <div class="score-rating">
+                                                    <input type="radio" id="score-5" name="score" value="5"/>
+                                                    <label title="5 stars" for="score-5">5 stars</label>
+                                                    <input type="radio" id="score-4" name="score" value="4"/>
+                                                    <label title="4 stars" for="score-4">4 stars</label>
+                                                    <input type="radio" id="score-3" name="score" value="3"/>
+                                                    <label title="3 stars" for="score-3">3 stars</label>
+                                                    <input type="radio" id="score-2" name="score" value="2"/>
+                                                    <label title="2 stars" for="score-2">2 stars</label>
+                                                    <input type="radio" id="score-1" name="score" value="1"/>
+                                                    <label title="1 stars" for="score-1">1 stars</label>
+                                                </div>
+                                                <div class="articul">
+                                                    Арт.: 345879
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-content">
+                                            <div class="product-item-picture">
+                                                <a href="">
+                                                    <img src="images/product/4.jpg" alt="" class="img-responsive"/>
+                                                </a>
+                                            </div>
+                                            <div class="product-cost">
+                                                <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                                <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                            </div>
+                                            <div class="product-buy-control">
+                                                <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                            </div>
+                                            <div class="close-product">
+                                                <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-holder">
+                                        <div class="product-item-title">
+                                            <h3>
+                                                <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                            </h3>
+                                            <div class="articul-score-holder">
+                                                <div class="score-rating">
+                                                    <input type="radio" id="score-5" name="score" value="5"/>
+                                                    <label title="5 stars" for="score-5">5 stars</label>
+                                                    <input type="radio" id="score-4" name="score" value="4"/>
+                                                    <label title="4 stars" for="score-4">4 stars</label>
+                                                    <input type="radio" id="score-3" name="score" value="3"/>
+                                                    <label title="3 stars" for="score-3">3 stars</label>
+                                                    <input type="radio" id="score-2" name="score" value="2"/>
+                                                    <label title="2 stars" for="score-2">2 stars</label>
+                                                    <input type="radio" id="score-1" name="score" value="1"/>
+                                                    <label title="1 stars" for="score-1">1 stars</label>
+                                                </div>
+                                                <div class="articul">
+                                                    Арт.: 345879
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-content">
+                                            <div class="product-item-picture">
+                                                <a href="">
+                                                    <img src="images/product/5.jpg" alt="" class="img-responsive"/>
+                                                </a>
+                                            </div>
+                                            <div class="product-cost">
+                                                <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                                <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                            </div>
+                                            <div class="product-buy-control">
+                                                <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                            </div>
+                                            <div class="close-product">
+                                                <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-holder">
+                                        <div class="product-item-title">
+                                            <h3>
+                                                <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                            </h3>
+                                            <div class="articul-score-holder">
+                                                <div class="score-rating">
+                                                    <input type="radio" id="score-5" name="score" value="5"/>
+                                                    <label title="5 stars" for="score-5">5 stars</label>
+                                                    <input type="radio" id="score-4" name="score" value="4"/>
+                                                    <label title="4 stars" for="score-4">4 stars</label>
+                                                    <input type="radio" id="score-3" name="score" value="3"/>
+                                                    <label title="3 stars" for="score-3">3 stars</label>
+                                                    <input type="radio" id="score-2" name="score" value="2"/>
+                                                    <label title="2 stars" for="score-2">2 stars</label>
+                                                    <input type="radio" id="score-1" name="score" value="1"/>
+                                                    <label title="1 stars" for="score-1">1 stars</label>
+                                                </div>
+                                                <div class="articul">
+                                                    Арт.: 345879
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item-content">
+                                            <div class="product-item-picture">
+                                                <a href="">
+                                                    <img src="images/product/6.jpg" alt="" class="img-responsive"/>
+                                                </a>
+                                            </div>
+                                            <div class="product-cost">
+                                                <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                                <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                            </div>
+                                            <div class="product-buy-control">
+                                                <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                            </div>
+                                            <div class="close-product">
+                                                <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="collapse-footer text-right">
+                    <div class="collapse-footer text-center">
                         <a href="" class="btn btn-primary btn-sm">Перейти к сравнению</a>
                     </div>
 
@@ -704,10 +1012,278 @@
                     </div>
 
                     <div class="collapse-body">
-                        a
+                    <div class="scroll-container" style="height: 340px;">
+                    <ul class="product-list compare-list">
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Blanco ADON XL 6 S</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <span class="label label-success">Новинка</span>
+                                        <img src="images/product/1.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="product-buy-control">
+                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <img src="images/product/2.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="product-buy-control">
+                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <img src="images/product/3.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="product-buy-control">
+                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <img src="images/product/4.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="product-buy-control">
+                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <img src="images/product/5.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="product-buy-control">
+                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <img src="images/product/6.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="product-buy-control">
+                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                    </div>
                     </div>
 
-                    <div class="collapse-footer text-right">
+                    <div class="collapse-footer text-center">
                         <a href="" class="btn btn-primary btn-sm">Перейти к отложенным товарам</a>
                     </div>
 
@@ -725,10 +1301,260 @@
                     </div>
 
                     <div class="collapse-body">
-                        a
+                        <div class="scroll-container" style="height: 315px;">
+                    <ul class="product-list compare-list">
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Blanco ADON XL 6 S</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <span class="label label-success">Новинка</span>
+                                        <img src="images/product/1.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <img src="images/product/2.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <img src="images/product/3.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <img src="images/product/4.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <img src="images/product/5.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-holder">
+                            <div class="product-item-title">
+                                <h3>
+                                    <a href="">Al-КО Jet 3500 Inox Classic</a>
+                                </h3>
+                                <div class="articul-score-holder">
+                                    <div class="score-rating">
+                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                        <label title="5 stars" for="score-5">5 stars</label>
+                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                        <label title="4 stars" for="score-4">4 stars</label>
+                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                        <label title="3 stars" for="score-3">3 stars</label>
+                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                        <label title="2 stars" for="score-2">2 stars</label>
+                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                        <label title="1 stars" for="score-1">1 stars</label>
+                                    </div>
+                                    <div class="articul">
+                                        Арт.: 345879
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item-content">
+                                <div class="product-item-picture">
+                                    <a href="">
+                                        <img src="images/product/6.jpg" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div class="product-cost">
+                                    <span class="old-price">00 000 <i class="fa fa-rub"></i></span>
+                                    <span class="regular-price">000 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div class="close-product">
+                                    <a href="#"><i class="fa fa-times fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                    </div>
                     </div>
 
-                    <div class="collapse-footer text-right">
+                    <div class="collapse-footer text-center">
                         Итого: 2 товара, на сумму 60 000 <i class="fa fa-rub"></i> <a href="" class="btn btn-success btn-sm">Оформить заказ</a>
                     </div>
 
@@ -770,8 +1596,6 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
-
 <div class="modal fade" id="changeRegion">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -847,11 +1671,5 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/theme.js"></script>
 </body>
 </html>

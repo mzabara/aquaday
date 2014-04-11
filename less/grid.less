@@ -181,6 +181,12 @@
     display: inline-block;
     margin-top: 10px;
   }
+  main{
+    margin-bottom: 0;
+  }
+  footer{
+    position: relative!important;
+  }
 }
 
 // Small grid (Планщеты)
@@ -210,7 +216,19 @@
 }
 
 @media (max-width: @screen-sm-min) {
-
+  .checkout-holder{
+    .your-oder{
+      margin-top: 20px;
+      top: 0!important;
+      width: 100%;
+      background-color: #ffffff;
+      &.affix,
+      &.affix-top,
+      &.affix-bottom{
+        position: relative!important;
+      }
+    }
+  }
   .product-item-picture{
     margin-bottom: 15px;
     img{

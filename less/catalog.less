@@ -664,14 +664,156 @@ aside{
   }
 }
 
+&.compare-list{
+  margin:15px 0 0 0;
+  & > li{
+    position: relative;
+    width: 210px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .product-holder{
+    margin: 0 7px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    .box-shadow(0 0px 10px rgba(0,0,0,.2));
+    .product-item-title{
+      padding: 0 0 5px 0;
+      h3{
+        height: 33px;
+        overflow: hidden;
+        margin: 0 0 5px 0;
+        padding: 0;
+        text-align: center;
+        font-size: @font-size-base;
+        a{
+          color: #111111;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+
+      .articul-score-holder{
+        text-align: center;
+        padding-bottom: 7px;
+        .score-rating {
+          float: left;
+          margin-top: 2px;
+          unicode-bidi: bidi-override;
+          direction: rtl;
+          text-align: center;
+          border: 0;
+          font-size: 0;
+
+          input {
+            position:absolute;
+            top: -2em;
+            clip:rect(0,0,0,0);
+          }
+
+          legend {
+            overflow: hidden;
+            height: 0;
+          }
+          label {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            width: 15px;
+            height: 15px;
+            overflow: hidden;
+            text-indent: 100%;
+            &:before {
+              content: "\f005";
+              font-family: 'Fontawesome';
+              font-size: 12px;
+              position: absolute;
+              top: 0; left: 0; right: 0; bottom: 0;
+              text-indent: 0;
+              line-height: 15px;
+              color: #d3d2d2;
+            }
+
+            &:hover:before,
+            &:hover ~ label:before,
+            input:checked ~ &:before {
+              content: "\f005";
+              font-family: 'Fontawesome';
+              color: #0095da;
+            }
+            &:active {
+              position: relative;
+              top: 1px;
+            }
+          }
+        }
+        .articul{
+          text-align: right;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .product-item-content{
+      .product-cost{
+        padding: 5px 0;
+        text-align: center;
+        .regular-price{
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 10px;
+          font-family: @font-family-sans-serif-medium;
+          font-size: 16px;
+          .fa{
+            font-size: 14px;
+          }
+        }
+        .old-price{
+          display: inline-block;
+          vertical-align: middle;
+          font-family: @font-family-sans-serif-medium;
+          text-decoration: line-through;
+          color: #db5c55;
+          .fa{
+            font-size: 12px;
+          }
+        }
+      }
+
+      .product-buy-control{
+        .row{
+          padding: 7px 0;
+          a{
+            font-size: 12px;
+            .fa{
+              color: #73777a;
+            }
+            &:hover{
+              .fa{
+                color: #0095da;
+              }
+            }
+          }
+        }
+        .btn{
+          width: 100%;
+          .btn-sm;
+        }
+      }
+    }
+  }
+
+}
+
 .product-item-picture{
   text-align: center;
+  height: 124px;
   a{
     display: inline-block;
     position: relative;
-  }
-  img{
-    border: solid 1px #d3d2d2;
   }
   .label{
     position: absolute;
@@ -695,5 +837,14 @@ aside{
     &.label-info{
       background-position:0 -222px;
     }
+  }
+}
+
+.close-product{
+  text-align: center;
+  margin-top: 7px;
+  a{
+    font-size: 12px;
+    color: @brand-danger;
   }
 }

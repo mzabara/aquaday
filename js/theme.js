@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 $('[data-toggle="tooltip"]').tooltip('hide');
 
 $('[data-toggle="popover"]').popover();
@@ -71,5 +73,13 @@ $(".scroll-container").mCustomScrollbar({
     horizontalScroll:true,
     autoDraggerLength:true,
     contentTouchScroll: true,
-    theme: "dark-thick"
+    theme: "dark-thick",
+    scrollButtons:{
+        enable:true
+    },
+    advanced:{
+        autoExpandHorizontalScroll:true,
+        updateOnContentResize: true
+    }
+});
 });

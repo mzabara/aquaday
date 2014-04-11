@@ -292,10 +292,6 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <div class="callout">
-                    Можно воспользоваться автоматическим заполнением: <a href="#"><img src="images/ya-btn.png" alt=""/></a>
-                </div>
-
                 <form role="form">
                     <div class="page-header">
                         <h3>Контактная информация</h3>
@@ -310,11 +306,16 @@
                             </label>
                         </div>
                     </div>
+                    <div class="callout">
+                        Можно воспользоваться автоматическим заполнением: <a href="#"><img src="images/ya-btn.png" alt=""/></a>
+                    </div>
                     <div class="row">
                         <div class="form-group col-sm-6">
                             <label for="inputFIO" class="control-label">Ф.И.О.:</label>
                             <input type="text" class="form-control" id="inputFIO">
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="form-group col-sm-6">
                             <label for="inputEmail" class="control-label">Email:</label>
                             <input type="text" class="form-control" id="inputEmail">
@@ -325,6 +326,8 @@
                             <label for="inputPhone" class="control-label">Телефон:</label>
                             <input type="text" class="form-control" id="inputPhone">
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="form-group col-sm-6">
                             <label class="control-label">Город:</label>
                             <p class="form-control-static">
@@ -333,113 +336,236 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-sm-12">
+                        <div class="form-group col-sm-6">
                             <label for="textareaAddres" class="control-label">Адрес доставки:</label>
                             <textarea class="form-control" id="textareaAddres">Пролетарская 416</textarea>
                         </div>
                     </div>
+
                     <div class="page-header">
-                        <h3>Службы доставки</h3>
+                        <h3>Выберите способ доставки</h3>
                     </div>
+
                     <div class="tk-list">
-                        <div class="tk-item-title">
-                            <h4>Доставка курьером</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <div class="tk-item-options">
-                                    <div class="form-group">
-                                        <label class="radio">
-                                            <input type="radio" value="option1" checked> до двери <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
-                                        </label>
+                        <div class="tk-item-options">
+                            <div class="form-group">
+                                <label class="radio">
+                                    <input type="radio" value="option1"> <h4>Самовывоз</h4>
+                                    <div class="help-block">
+                                        Вы можете сегодня забрать заказ по адресу: г. Красногорск, Южный бульвар, д. 6, с 10:00 - 18:00.
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <img src="images/icons/fast-delivery.png" alt=""/>
+                                </label>
                             </div>
                         </div>
                     </div>
+
                     <div class="tk-list">
-                        <div class="tk-item-title">
-                            <h4>ПЭК</h4>
-                            <div class="help-block">
-                                <small>Помимо сети филиалов и городов Золотого Кольца, Компания «ПЭК» производит доставку грузов в областные города, расположенные в регионах присутствия Компании. Доставка может быть произведена в любой населённый пункт, расположенный на расстоянии до 300 км от любого филиала Компании «ПЭК».</small>
+                        <div class="tk-item-options">
+                            <div class="form-group">
+                                <label class="radio">
+                                    <input type="radio" value="option1"> <h4>Доставка курьером</h4>
+                                    <div class="help-block">
+                                        Мы доставим ваш заказ в удобное для вас время.
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-2 col-xs-6">
+                                            Стоимость: <strong>500</strong> <i class="fa fa-rub"></i>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            Срок: <strong>4 &ndash; 5</strong> дней</i>
+                                        </div>
+                                    </div>
+
+                                </label>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <div class="tk-item-options">
-                                    <div class="form-group">
-                                        <label class="radio">
-                                            <input type="radio" id="inlineRadio3" value="option1" checked> до филиала <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="radio">
-                                            <input type="radio" id="inlineRadio4" value="option1" checked> до двери <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
-                                        </label>
-                                    </div>
+                    </div>
+
+                    <div class="tk-list">
+                        <div class="tk-item-title">
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <img src="images/icons/pe.jpg" alt="" class="img-responsive hidden-xs"/>
+                                </div>
+                                <div class="col-xs-11">
+                                    <h4>ПЭК</h4>
+                                    <small>Доставка может быть произведена в любой населённый пункт, расположенный на расстоянии до 300 км от любого филиала Компании «ПЭК».</small>
                                 </div>
                             </div>
-                            <div class="col-md-2">
-                                <img src="images/icons/pe.jpg" alt=""/>
+                        </div>
+                        <div class="tk-item-options">
+                            <div class="form-group">
+                                <label class="radio">
+                                    <div class="row">
+                                        <div class="col-sm-2 col-xs-12">
+                                            <input type="radio" value="option1"> до филиала
+                                        </div>
+                                        <div class="col-sm-2 col-xs-6">
+                                            Стоимость: <strong>500</strong> <i class="fa fa-rub"></i>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            Срок: <strong>4 &ndash; 5</strong> дней</i>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="radio">
+                                    <div class="row">
+                                        <div class="col-sm-2 col-xs-12">
+                                            <input type="radio" value="option1"> до дверей
+                                        </div>
+                                        <div class="col-sm-2 col-xs-6">
+                                            Стоимость: <strong>700</strong> <i class="fa fa-rub"></i>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            Срок: <strong>5 &ndash; 7</strong> дней</i>
+                                        </div>
+                                    </div>
+                                </label>
                             </div>
                         </div>
                     </div>
                     <div class="tk-list">
                         <div class="tk-item-title">
-                            <h4>Автотрейдинг</h4>
-                            <div class="help-block"><small>«Автотрейдинг» входит в число крупнейших транспортно-экспедиционных компаний в России, которая почти 20 лет работает на рынке грузоперевозок. На сегодняшний день сеть «Автотрейдинга» насчитывает 90 филиалов по всей стране, обеспечивая доставку грузов более чем в 1900 населенных пунктов от Калининграда до Владивостока.</small></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <div class="tk-item-options">
-                                    <div class="form-group">
-                                        <label class="radio">
-                                            <input type="radio" id="inlineRadio5" value="option1" checked> до филиала <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="radio">
-                                            <input type="radio" id="inlineRadio6" value="option1" checked> до двери <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
-                                        </label>
-                                    </div>
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <img src="images/icons/ratek.jpg" alt="" class="img-responsive hidden-xs"/>
+                                </div>
+                                <div class="col-xs-11">
+                                    <h4>РАТЭК</h4>
                                 </div>
                             </div>
-                            <div class="col-md-2">
-                                <img src="images/icons/avt.jpg" alt=""/>
+                        </div>
+                        <div class="tk-item-options">
+                            <div class="form-group">
+                                <label class="radio">
+                                    <div class="row">
+                                        <div class="col-sm-2 col-xs-12">
+                                            <input type="radio" value="option1"> до филиала
+                                        </div>
+                                        <div class="col-sm-2 col-xs-6">
+                                            Стоимость: <strong>500</strong> <i class="fa fa-rub"></i>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            Срок: <strong>4 &ndash; 5</strong> дней</i>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="radio">
+                                    <div class="row">
+                                        <div class="col-sm-2 col-xs-12">
+                                            <input type="radio" value="option1"> до дверей
+                                        </div>
+                                        <div class="col-sm-2 col-xs-6">
+                                            Стоимость: <strong>700</strong> <i class="fa fa-rub"></i>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            Срок: <strong>5 &ndash; 7</strong> дней</i>
+                                        </div>
+                                    </div>
+                                </label>
                             </div>
                         </div>
                     </div>
                     <div class="tk-list">
                         <div class="tk-item-title">
-                            <h4>Ратек</h4>
-                            <div class="help-block"><small>В работе с клиентами компанию «Деловые линии» отличает быстрота выполнения заказов, предоставление исчерпывающей информации на любые запросы, поступающие по телефону или электронной почте, тщательная разработка, с учётом пожеланий клиента, логистической схемы перевозки, гибкая система ценообразования, конкурентоспособные цены.</small></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <div class="tk-item-options">
-                                    <div class="form-group">
-                                        <label class="radio">
-                                            <input type="radio" id="inlineRadio7" value="option1" checked> до филиала <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="radio">
-                                            <input type="radio" id="inlineRadio8" value="option1" checked> до двери <strong>500 <i class="fa fa-rub"></i></strong> (<span class="discount-price">Скидка: <strong>100 <i class="fa fa-rub"></i></strong></span>)
-                                        </label>
-                                    </div>
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <img src="images/icons/avt.jpg" alt="" class="img-responsive hidden-xs"/>
+                                </div>
+                                <div class="col-xs-11">
+                                    <h4>Автотрейдинг</h4>
                                 </div>
                             </div>
-                            <div class="col-md-2">
-                                <img src="images/icons/ratek.jpg" alt=""/>
+                        </div>
+                        <div class="tk-item-options">
+                            <div class="form-group">
+                                <label class="radio">
+                                    <div class="row">
+                                        <div class="col-sm-2 col-xs-12">
+                                            <input type="radio" value="option1" checked> до филиала
+                                        </div>
+                                        <div class="col-sm-2 col-xs-6">
+                                            Стоимость: <strong>500</strong> <i class="fa fa-rub"></i>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            Срок: <strong>4 &ndash; 5</strong> дней</i>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="radio">
+                                    <div class="row">
+                                        <div class="col-sm-2 col-xs-12">
+                                            <input type="radio" value="option1"> до дверей
+                                        </div>
+                                        <div class="col-sm-2 col-xs-6">
+                                            Стоимость: <strong>700</strong> <i class="fa fa-rub"></i>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            Срок: <strong>5 &ndash; 7</strong> дней</i>
+                                        </div>
+                                    </div>
+                                </label>
                             </div>
                         </div>
                     </div>
                     <div class="page-header">
-                        <h3>Способы оплаты</h3>
+                        <h3>Выберите способ оплаты</h3>
                     </div>
+
+                    <div class="tk-list">
+                        <div class="tk-item-options">
+                            <div class="form-group">
+                                <label class="radio">
+                                    <input type="radio" value="option1"> <h4>Наличными курьеру</h4>
+                                    <div class="help-block">
+                                        Оплата наличными при получении заказа курьеру.
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tk-list">
+                        <div class="tk-item-options">
+                            <div class="form-group">
+                                <label class="radio">
+                                    <input type="radio" value="option1"> <h4>Банковские карты</h4>
+                                    <div class="help-block">
+                                        Visa, MasterCard
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tk-list">
+                        <div class="tk-item-options">
+                            <div class="form-group">
+                                <label class="radio">
+                                    <input type="radio" value="option1"> <h4>Яндекс.Деньги</h4>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tk-list">
+                        <div class="tk-item-options">
+                            <div class="form-group">
+                                <label class="radio">
+                                    <input type="radio" value="option1"> <h4>Квитанция Сбербанка</h4>
+                                    <div class="help-block">
+                                        После оформления заказа вам будет доступна квитанция для печати.
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="shopping-cart-control">
                         <div class="row">
                             <div class="col-xs-6">
@@ -454,7 +580,7 @@
 
             </div>
             <div class="col-md-3">
-                <div class="your-oder" role="complementary" data-spy="affix" data-offset-top="100" data-offset-bottom="500">
+                <div class="your-oder" role="complementary" data-spy="affix" data-offset-top="100" data-offset-bottom="400">
                     <h4>Ваш заказ</h4>
                     <div class="row">
                         <div class="col-xs-7">
@@ -481,35 +607,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="pays-info-holder">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <ul class="list-inline">
-                    <li>
-                        Принимаем к оплате
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="images/icons/visa.png" alt=""/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="images/icons/mastercard.png" alt=""/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-5 text-center hidden-xs">
-                <ul class="list-inline socials pull-right">
-                    <li>s</li>
-                </ul>
             </div>
         </div>
     </div>
