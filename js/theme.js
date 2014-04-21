@@ -94,5 +94,7 @@ $("#sliderRangeWidth").ionRangeSlider({
             updateOnBrowserResize: true
         }
     });
+    $('.selectpicker').selectpicker();
     fakewaffle.responsiveTabs(['xs', 'sm']);
 });
+

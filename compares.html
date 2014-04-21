@@ -66,6 +66,7 @@
 
 <!-- Collect the nav links, forms, and other content for toggling -->
 <section class="collapse navbar-collapse" id="headerNavbarCollapse">
+
 <div class="top-bar-holder">
     <div class="container">
 
@@ -262,6 +263,7 @@
         <a class="collapsed"  data-toggle="collapse" data-parent="#catalogNav" href="#collapseFive">Аксессуары для мебели</a>
     </li>
 </ul>
+
 <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
     <li>
 
@@ -340,6 +342,7 @@
 </ul>
 </div>
 </div>
+
 </section><!-- /.navbar-collapse -->
 </header>
 
@@ -348,308 +351,453 @@
         <div class="container">
             <ol class="breadcrumb">
                 <li><a href="#">Главная</a></li>
-                <li><a href="#">Личный кабинет</a></li>
-                <li class="active">Подписка</li>
+                <li class="active">Сравнение товаров</li>
             </ol>
         </div>
     </section>
     <section class="catalog-page-header">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1>Отложенные товары</h1>
-                </div>
-            </div>
+            <h1>Сравнение товаров</h1>
         </div>
     </section>
 
     <section class="catalog-list-holder">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="profile-sidebar" role="complementary">
-                        <ul class="nav profile-sidenav">
-                            <li>
-                                <a href="#">Персональные данные</a>
-                            </li>
-                            <li>
-                                <a href="#">Ваши заказы</a>
-                            </li>
-                            <li class="active">
-                                <a href="#">Отложенные товары</a>
-                            </li>
-                            <li>
-                                <a href="#">Подписка</a>
-                            </li>
-                        </ul>
+        <div class="container compare-table">
+            <form role="form">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="categorySelect">Выберите категорию сравнения</label>
+                            <select class="selectpicker" id="categorySelect">
+                                <optgroup label="Сантехника">
+                                    <option>Кухонные мойки</option>
+                                </optgroup>
+                                <optgroup label="Бытовая техника">
+                                    <option>Посудомоечные машины</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Показывать свойства:</label>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary active">
+                                    <input type="radio" name="options" id="option1"> Все
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="options" id="option2"> Различающиеся
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <div class="favorite-items-list">
-                        <ul class="th">
-                            <li>
-                                <div class="product-holder">
-                                    <div class="product-item-title">
-                                        <div class="row">
-                                            <div class="col-md-9 col-xs-12">
-                                                <h3>
-                                                    <a href="">Blanco ADON XL 6 S</a>
-                                                </h3>
-                                            </div>
-                                            <div class="col-md-3 col-xs-12 articul-score-holder">
-                                                <div class="score-rating">
-                                                    <input type="radio" id="score-5" name="score" value="5"/>
-                                                    <label title="5 stars" for="score-5">5 stars</label>
-                                                    <input type="radio" id="score-4" name="score" value="4"/>
-                                                    <label title="4 stars" for="score-4">4 stars</label>
-                                                    <input type="radio" id="score-3" name="score" value="3"/>
-                                                    <label title="3 stars" for="score-3">3 stars</label>
-                                                    <input type="radio" id="score-2" name="score" value="2"/>
-                                                    <label title="2 stars" for="score-2">2 stars</label>
-                                                    <input type="radio" id="score-1" name="score" value="1"/>
-                                                    <label title="1 stars" for="score-1">1 stars</label>
+            </form>
+
+            <div class="scroll-container">
+                <table class="table table-hover table-zebra">
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <ul class="th">
+                                <li>
+                                    <div class="product-holder">
+                                        <div class="product-item-title">
+                                            <div class="row">
+                                                <div class="col-md-9 col-xs-12">
+                                                    <h3>
+                                                        <a href="">Blanco ADON XL 6 S</a>
+                                                    </h3>
                                                 </div>
-                                                <div class="articul">
-                                                    Арт.: 345879
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item-content">
-                                        <div class="row">
-                                            <div class="col-md-3 product-item-picture">
-                                                <a href="">
-                                                    <img src="images/product/1.jpg" alt="" class="img-responsive"/>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="characteristics-list">
-                                                    <div class="row">
-                                                        <div class="col-xs-12">
-                                                            Цвет: Жасмин
-                                                        </div>
-                                                        <div class="col-xs-12">
-                                                            Оборачиваемость: Мойка слева
-                                                        </div>
+                                                <div class="col-md-3 col-xs-12 articul-score-holder">
+                                                    <div class="score-rating">
+                                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                                        <label title="5 stars" for="score-5">5 stars</label>
+                                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                                        <label title="4 stars" for="score-4">4 stars</label>
+                                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                                        <label title="3 stars" for="score-3">3 stars</label>
+                                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                                        <label title="2 stars" for="score-2">2 stars</label>
+                                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                                        <label title="1 stars" for="score-1">1 stars</label>
+                                                    </div>
+                                                    <div class="articul">
+                                                        Арт.: 345879
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="availability">
-                                                    <div class="label label-success">В наличии</div>
+                                        </div>
+                                        <div class="product-item-content">
+                                            <div class="row">
+                                                <div class="col-md-3 product-item-picture">
+                                                    <a href="">
+                                                        <img src="images/product/1.jpg" alt="" class="img-responsive"/>
+                                                    </a>
                                                 </div>
-
-                                                <div class="product-cost">
-                                                    <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
-                                                    <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
-                                                </div>
-
-                                                <div class="product-buy-control">
-                                                    <div class="row">
-                                                        <div class="col-xs-6 text-center">
-                                                            <a href=""><i class="fa fa-asterisk fa-lg"></i> сравнить</a>
-                                                        </div>
-                                                        <div class="col-xs-6 text-center">
-                                                            <a href="#" class="ajax-link text-danger">удалить товар</a>
+                                                <div class="col-md-6">
+                                                    <div class="characteristics-list">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                Цвет: Жасмин
+                                                            </div>
+                                                            <div class="col-xs-12">
+                                                                Оборачиваемость: Мойка слева
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
                                                 </div>
+                                                <div class="col-md-3">
+                                                    <div class="availability">
+                                                        <div class="label label-success">В наличии</div>
+                                                    </div>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-holder">
-                                    <div class="product-item-title">
-                                        <div class="row">
-                                            <div class="col-md-9 col-xs-12">
-                                                <h3>
-                                                    <a href="">Blanco ADON XL 6 S</a>
-                                                </h3>
-                                            </div>
-                                            <div class="col-md-3 col-xs-12 articul-score-holder">
-                                                <div class="score-rating">
-                                                    <input type="radio" id="score-5" name="score" value="5"/>
-                                                    <label title="5 stars" for="score-5">5 stars</label>
-                                                    <input type="radio" id="score-4" name="score" value="4"/>
-                                                    <label title="4 stars" for="score-4">4 stars</label>
-                                                    <input type="radio" id="score-3" name="score" value="3"/>
-                                                    <label title="3 stars" for="score-3">3 stars</label>
-                                                    <input type="radio" id="score-2" name="score" value="2"/>
-                                                    <label title="2 stars" for="score-2">2 stars</label>
-                                                    <input type="radio" id="score-1" name="score" value="1"/>
-                                                    <label title="1 stars" for="score-1">1 stars</label>
-                                                </div>
-                                                <div class="articul">
-                                                    Арт.: 345879
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item-content">
-                                        <div class="row">
-                                            <div class="col-md-3 product-item-picture">
-                                                <a href="">
-                                                    <img src="images/product/2.jpg" alt="" class="img-responsive"/>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="availability">
-                                                    <div class="label label-success">В наличии</div>
-                                                </div>
+                                                    <div class="product-cost">
+                                                        <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
+                                                        <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
+                                                    </div>
 
-                                                <div class="product-cost">
-                                                    <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
-                                                    <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
-                                                </div>
-
-                                                <div class="product-buy-control">
-                                                    <div class="row">
-                                                        <div class="col-xs-6 text-center">
-                                                            <a href=""><i class="fa fa-asterisk fa-lg"></i> сравнить</a>
+                                                    <div class="product-buy-control">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-center">
+                                                                <a href=""><i class="fa fa-heart"></i> отложить</a>
+                                                            </div>
+                                                            <div class="col-xs-6 text-center">
+                                                                <a href="#" class="text-danger"><i class="fa fa-times"></i> удалить</a>
+                                                            </div>
                                                         </div>
-                                                        <div class="col-xs-6 text-center">
-                                                            <a href="#" class="ajax-link text-danger">удалить товар</a>
+                                                        <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="th">
+                                <li>
+                                    <div class="product-holder">
+                                        <div class="product-item-title">
+                                            <div class="row">
+                                                <div class="col-md-9 col-xs-12">
+                                                    <h3>
+                                                        <a href="">Blanco ADON XL 6 S</a>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-md-3 col-xs-12 articul-score-holder">
+                                                    <div class="score-rating">
+                                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                                        <label title="5 stars" for="score-5">5 stars</label>
+                                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                                        <label title="4 stars" for="score-4">4 stars</label>
+                                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                                        <label title="3 stars" for="score-3">3 stars</label>
+                                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                                        <label title="2 stars" for="score-2">2 stars</label>
+                                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                                        <label title="1 stars" for="score-1">1 stars</label>
+                                                    </div>
+                                                    <div class="articul">
+                                                        Арт.: 345879
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-content">
+                                            <div class="row">
+                                                <div class="col-md-3 product-item-picture">
+                                                    <a href="">
+                                                        <img src="images/product/2.jpg" alt="" class="img-responsive"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="characteristics-list">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                Цвет: Жасмин
+                                                            </div>
+                                                            <div class="col-xs-12">
+                                                                Оборачиваемость: Мойка слева
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
                                                 </div>
+                                                <div class="col-md-3">
+                                                    <div class="availability">
+                                                        <div class="label label-success">В наличии</div>
+                                                    </div>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-holder">
-                                    <div class="product-item-title">
-                                        <div class="row">
-                                            <div class="col-md-9 col-xs-12">
-                                                <h3>
-                                                    <a href="">Blanco ADON XL 6 S</a>
-                                                </h3>
-                                            </div>
-                                            <div class="col-md-3 col-xs-12 articul-score-holder">
-                                                <div class="score-rating">
-                                                    <input type="radio" id="score-5" name="score" value="5"/>
-                                                    <label title="5 stars" for="score-5">5 stars</label>
-                                                    <input type="radio" id="score-4" name="score" value="4"/>
-                                                    <label title="4 stars" for="score-4">4 stars</label>
-                                                    <input type="radio" id="score-3" name="score" value="3"/>
-                                                    <label title="3 stars" for="score-3">3 stars</label>
-                                                    <input type="radio" id="score-2" name="score" value="2"/>
-                                                    <label title="2 stars" for="score-2">2 stars</label>
-                                                    <input type="radio" id="score-1" name="score" value="1"/>
-                                                    <label title="1 stars" for="score-1">1 stars</label>
-                                                </div>
-                                                <div class="articul">
-                                                    Арт.: 345879
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item-content">
-                                        <div class="row">
-                                            <div class="col-md-3 product-item-picture">
-                                                <a href="">
-                                                    <img src="images/product/3.jpg" alt="" class="img-responsive"/>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="availability">
-                                                    <div class="label label-success">В наличии</div>
-                                                </div>
+                                                    <div class="product-cost">
+                                                        <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
+                                                        <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
+                                                    </div>
 
-                                                <div class="product-cost">
-                                                    <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
-                                                    <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
-                                                </div>
-
-                                                <div class="product-buy-control">
-                                                    <div class="row">
-                                                        <div class="col-xs-6 text-center">
-                                                            <a href=""><i class="fa fa-asterisk fa-lg"></i> сравнить</a>
+                                                    <div class="product-buy-control">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-center">
+                                                                <a href=""><i class="fa fa-heart"></i> отложить</a>
+                                                            </div>
+                                                            <div class="col-xs-6 text-center">
+                                                                <a href="#" class="text-danger"><i class="fa fa-times"></i> удалить</a>
+                                                            </div>
                                                         </div>
-                                                        <div class="col-xs-6 text-center">
-                                                            <a href="#" class="ajax-link text-danger">удалить товар</a>
+                                                        <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="th">
+                                <li>
+                                    <div class="product-holder">
+                                        <div class="product-item-title">
+                                            <div class="row">
+                                                <div class="col-md-9 col-xs-12">
+                                                    <h3>
+                                                        <a href="">Blanco ADON XL 6 S</a>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-md-3 col-xs-12 articul-score-holder">
+                                                    <div class="score-rating">
+                                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                                        <label title="5 stars" for="score-5">5 stars</label>
+                                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                                        <label title="4 stars" for="score-4">4 stars</label>
+                                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                                        <label title="3 stars" for="score-3">3 stars</label>
+                                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                                        <label title="2 stars" for="score-2">2 stars</label>
+                                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                                        <label title="1 stars" for="score-1">1 stars</label>
+                                                    </div>
+                                                    <div class="articul">
+                                                        Арт.: 345879
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-content">
+                                            <div class="row">
+                                                <div class="col-md-3 product-item-picture">
+                                                    <a href="">
+                                                        <img src="images/product/3.jpg" alt="" class="img-responsive"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="characteristics-list">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                Цвет: Жасмин
+                                                            </div>
+                                                            <div class="col-xs-12">
+                                                                Оборачиваемость: Мойка слева
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
                                                 </div>
+                                                <div class="col-md-3">
+                                                    <div class="availability">
+                                                        <div class="label label-success">В наличии</div>
+                                                    </div>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-holder">
-                                    <div class="product-item-title">
-                                        <div class="row">
-                                            <div class="col-md-9 col-xs-12">
-                                                <h3>
-                                                    <a href="">Blanco ADON XL 6 S</a>
-                                                </h3>
-                                            </div>
-                                            <div class="col-md-3 col-xs-12 articul-score-holder">
-                                                <div class="score-rating">
-                                                    <input type="radio" id="score-5" name="score" value="5"/>
-                                                    <label title="5 stars" for="score-5">5 stars</label>
-                                                    <input type="radio" id="score-4" name="score" value="4"/>
-                                                    <label title="4 stars" for="score-4">4 stars</label>
-                                                    <input type="radio" id="score-3" name="score" value="3"/>
-                                                    <label title="3 stars" for="score-3">3 stars</label>
-                                                    <input type="radio" id="score-2" name="score" value="2"/>
-                                                    <label title="2 stars" for="score-2">2 stars</label>
-                                                    <input type="radio" id="score-1" name="score" value="1"/>
-                                                    <label title="1 stars" for="score-1">1 stars</label>
-                                                </div>
-                                                <div class="articul">
-                                                    Арт.: 345879
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item-content">
-                                        <div class="row">
-                                            <div class="col-md-3 product-item-picture">
-                                                <a href="">
-                                                    <img src="images/product/4.jpg" alt="" class="img-responsive"/>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="availability">
-                                                    <div class="label label-success">В наличии</div>
-                                                </div>
+                                                    <div class="product-cost">
+                                                        <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
+                                                        <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
+                                                    </div>
 
-                                                <div class="product-cost">
-                                                    <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
-                                                    <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
-                                                </div>
-
-                                                <div class="product-buy-control">
-                                                    <div class="row">
-                                                        <div class="col-xs-6 text-center">
-                                                            <a href=""><i class="fa fa-asterisk fa-lg"></i> сравнить</a>
+                                                    <div class="product-buy-control">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-center">
+                                                                <a href=""><i class="fa fa-heart"></i> отложить</a>
+                                                            </div>
+                                                            <div class="col-xs-6 text-center">
+                                                                <a href="#" class="text-danger"><i class="fa fa-times"></i> удалить</a>
+                                                            </div>
                                                         </div>
-                                                        <div class="col-xs-6 text-center">
-                                                            <a href="#" class="ajax-link text-danger">удалить товар</a>
+                                                        <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="th">
+                                <li>
+                                    <div class="product-holder">
+                                        <div class="product-item-title">
+                                            <div class="row">
+                                                <div class="col-md-9 col-xs-12">
+                                                    <h3>
+                                                        <a href="">Blanco ADON XL 6 S</a>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-md-3 col-xs-12 articul-score-holder">
+                                                    <div class="score-rating">
+                                                        <input type="radio" id="score-5" name="score" value="5"/>
+                                                        <label title="5 stars" for="score-5">5 stars</label>
+                                                        <input type="radio" id="score-4" name="score" value="4"/>
+                                                        <label title="4 stars" for="score-4">4 stars</label>
+                                                        <input type="radio" id="score-3" name="score" value="3"/>
+                                                        <label title="3 stars" for="score-3">3 stars</label>
+                                                        <input type="radio" id="score-2" name="score" value="2"/>
+                                                        <label title="2 stars" for="score-2">2 stars</label>
+                                                        <input type="radio" id="score-1" name="score" value="1"/>
+                                                        <label title="1 stars" for="score-1">1 stars</label>
+                                                    </div>
+                                                    <div class="articul">
+                                                        Арт.: 345879
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-content">
+                                            <div class="row">
+                                                <div class="col-md-3 product-item-picture">
+                                                    <a href="">
+                                                        <img src="images/product/4.jpg" alt="" class="img-responsive"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="characteristics-list">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                Цвет: Жасмин
+                                                            </div>
+                                                            <div class="col-xs-12">
+                                                                Оборачиваемость: Мойка слева
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
                                                 </div>
+                                                <div class="col-md-3">
+                                                    <div class="availability">
+                                                        <div class="label label-success">В наличии</div>
+                                                    </div>
 
+                                                    <div class="product-cost">
+                                                        <span class="old-price">27 000 <i class="fa fa-rub"></i></span>
+                                                        <span class="regular-price">26 250 <i class="fa fa-rub"></i></span>
+                                                    </div>
+
+                                                    <div class="product-buy-control">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-center">
+                                                                <a href=""><i class="fa fa-heart"></i> отложить</a>
+                                                            </div>
+                                                            <div class="col-xs-6 text-center">
+                                                                <a href="#" class="text-danger"><i class="fa fa-times"></i> удалить</a>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                                    </div>
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Материал</td>
+                        <td>Гранит</td>
+                        <td>Сталь</td>
+                        <td>Стекло</td>
+                        <td>Стекло</td>
+                    </tr>
+                    <tr>
+                        <td>Длина мойки</td>
+                        <td>980 мм</td>
+                        <td>950 мм</td>
+                        <td>900 мм</td>
+                        <td>900 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Ширина мойки</td>
+                        <td>480 мм</td>
+                        <td>450 мм</td>
+                        <td>410 мм</td>
+                        <td>410 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Ширина шкафа, от:</td>
+                        <td>60 см</td>
+                        <td>30 см</td>
+                        <td>20 см</td>
+                        <td>20 см</td>
+                    </tr>
+                    <tr>
+                        <td>Глубина чаши (мм)</td>
+                        <td>190</td>
+                        <td>150</td>
+                        <td>110</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>Тип монтажа</td>
+                        <td>Врезная мойка</td>
+                        <td>Не врезная мойка</td>
+                        <td>&mdash;</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>Количество чаш</td>
+                        <td>1 основная чаша</td>
+                        <td>1 основная чаша</td>
+                        <td>1 основная чаша</td>
+                        <td>1 основная чаша</td>
+                    </tr>
+                    <tr>
+                        <td>Наличие крыла</td>
+                        <td>с крылом</td>
+                        <td>с крылом</td>
+                        <td>с крылом</td>
+                        <td>с крылом</td>
+                    </tr>
+                    <tr>
+                        <td>Клапан-автомат</td>
+                        <td>да</td>
+                        <td>да</td>
+                        <td>да</td>
+                        <td>да</td>
+                    </tr>
+                    <tr>
+                        <td>Комплектация</td>
+                        <td>многослойная разделочная доска из пластика и древесины ясеня, отводная арматура с клапаном-автоматом 3 ½"</td>
+                        <td>&mdash;</td>
+                        <td>&mdash;</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>Страна изготовления</td>
+                        <td>Германия</td>
+                        <td>Австрия</td>
+                        <td>Италия</td>
+                        <td>Италия</td>
+                    </tr>
+                    <tr>
+                        <td>Гарантия</td>
+                        <td>2 года</td>
+                        <td>2 года</td>
+                        <td>2 года</td>
+                        <td>2 года</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
